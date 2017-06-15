@@ -1,0 +1,223 @@
+@charset "utf-8";
+
+
+/*------------------------------------------------------------
+	menuBox
+------------------------------------------------------------*/
+/*  */
+/* 一级菜单图标 */
+.menuBox {
+    width: 60px;
+    height: 100%;
+    position: fixed;
+    left: -500px;
+    top: 0;
+    z-index: 9998;
+    transition: all 1.5s;
+    -webkit-transition: all 1.5s;
+    background-color: #FFF;
+}
+
+
+
+/* 一级菜单中间位置 */
+.menuBox .menuBtn img {
+    margin: -16px 0 0 -16px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+}
+
+/* 二级菜单位置 */
+.menuBox .menu-content {
+    width: 0;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    position: fixed;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: width 0.4s linear;
+    -webkit-transition: width 0.4s linear;
+	
+}
+/* 二级菜单显示 */
+.menuBox.open .menu-content {
+    min-width: 25.1%;
+    width: 25.1%;
+    transition-delay: 0.1s;
+    -webkit-transition-delay: 0.1s;
+	
+}
+/* 二级菜单位置 */
+.menuBox .menu-content-inner {
+    padding: 60px 0 60px 30px;
+    width: 100%;
+    height: 100%;
+    display: table;
+    box-sizing: border-box;
+	
+}
+/* 二级菜单空白部分 */
+.menuBox .menu-content-main {
+    width: 100%;
+    height: 100%;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    perspective: 500px;
+    -webkit-perspective: 500px;
+    -webkit-transition: -webkit-transform .4s ease;
+    transition: transform .4s ease;
+    -webkit-transform: perspective(500px) rotateY(90deg);
+    transform: perspective(500px) rotateY(90deg);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    background-color: #FFF;
+	 
+}
+/* 二级菜单显示 */
+.menuBox.open .menu-content-main {
+    transform: none;
+    -webkit-transform: none;
+	
+}
+/* 二级菜单显示速度 */
+.menuBox .menu-content-main li {
+    padding: 3.5% 0;
+    opacity: 0;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+	
+}
+/* 二级菜单显示速度 */
+.menuBox .menu-content-main li:first-child {
+    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    transition-delay: 0s;
+    -webkit-transition-delay: 0s;
+	 
+}
+/* 二级菜单闪现显示 */
+.menuBox.open .menu-content-main li:first-child {
+    transition-delay: 0.1s;
+    -webkit-transition-delay: 0.1s;
+	 
+}
+/* 二级菜单闪现显示 */
+.menuBox .menu-content-main li:nth-child(2) {
+    transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+    transition-delay: 0s;
+    -webkit-transition-delay: 0s;
+	  
+}
+/* 二级菜单闪现显示 */
+.menuBox.open .menu-content-main li:nth-child(2) {
+    transition-delay: 0.4s;
+    -webkit-transition-delay: 0.4s;
+	
+}
+/* 二级菜单闪现显示 */
+.menuBox .menu-content-main li:nth-child(3) {
+    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+    transition-delay: 0s;
+    -webkit-transition-delay: 0s;
+	
+}
+/* 二级菜单闪现显示 */
+.menuBox.open .menu-content-main li:nth-child(3) {
+    transition-delay: 0.5s;
+    -webkit-transition-delay: 0.5s;
+	 
+}
+/* 二级菜单闪现显示 */
+.menuBox .menu-content-main li:nth-child(4) {
+    transform: translateY(40px);
+    -webkit-transform: translateY(40px);
+    transition-delay: 0s;
+    -webkit-transition-delay: 0s;
+	
+}
+/* 二级菜单闪现显示 */
+.menuBox.open .menu-content-main li:nth-child(4) {
+    transition-delay: 0.6s;
+    -webkit-transition-delay: 0.6s;
+	
+}
+/* 二级菜单闪现显示 */
+.menuBox .menu-content-main li:nth-child(5) {
+    transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+    transition-delay: 0s;
+    -webkit-transition-delay: 0s;
+	
+}
+/* 二级菜单闪现显示 */
+.menuBox.open .menu-content-main li:nth-child(5) {
+    transition-delay: 0.7s;
+    -webkit-transition-delay: 0.7s;
+
+}
+/* 二级菜单闪现显示 */
+.menuBox .menu-content-main li:nth-child(6) {
+    transform: translateY(60px);
+    -webkit-transform: translateY(60px);
+    transition-delay: 0s;
+    -webkit-transition-delay: 0s;
+	
+}
+/* 二级菜单闪现显示 */
+.menuBox.open .menu-content-main li:nth-child(6) {
+    transition-delay: 0.8s;
+    -webkit-transition-delay: 0.8s;
+	
+}
+/* 二级菜单闪现显示 */
+.menuBox .menu-content-main li:nth-child(7) {
+    transform: translateY(70px);
+    -webkit-transform: translateY(70px);
+    transition-delay: 0s;
+    -webkit-transition-delay: 0s;
+	
+}
+/* 二级菜单闪现显示 */
+.menuBox.open .menu-content-main li:nth-child(7) {
+    transition-delay: 0.9s;
+    -webkit-transition-delay: 0.9s;
+	   z-index: 9998;
+}
+/* 二级菜单闪现显示 */
+.menuBox .menu-content-main li:nth-child(8) {
+    transform: translateY(80px);
+    -webkit-transform: translateY(80px);
+    transition-delay: 0s;
+    -webkit-transition-delay: 0s;
+	
+}
+/* 二级菜单闪现显示 */
+.menuBox.open .menu-content-main li:nth-child(8) {
+    transition-delay: 1s;
+    -webkit-transition-delay: 1s;
+	
+}
+/* 二级菜单内容显示 */
+.menuBox.open .menu-content-main li {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    opacity: 1;
+	
+}
+
+
+#home .menuBox {
+    left: 0 !important;
+    opacity: 1 !important;
+}
+
+
+
+
